@@ -62,7 +62,7 @@ def days_ago(s):
 
 
 def one_second_before(s):
-    return str(datetime_from_string(s) - datetime.timedelta(seconds=1))
+    return str(datetime_from_string(s[:19]) - datetime.timedelta(seconds=1))
 
 
 def backup(user, password, journal):
